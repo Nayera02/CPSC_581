@@ -1,0 +1,360 @@
+
+<!DOCTYPE html>
+<html>
+<title>Nayera's Portfolio</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif;}
+body, html {
+  height: 100%;
+  color: #777;
+  line-height: 1.8;
+}
+
+/* Create a Parallax Effect */
+.bgimg-1, .bgimg-2, .bgimg-3 {
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* First image (Logo. Full height) */
+.bgimg-1 {
+  background-image: url('plant.JPG')
+
+}
+
+
+
+.w3-wide {letter-spacing: 10px;}
+.w3-hover-opacity {cursor: pointer;}
+
+/* Turn off parallax scrolling for tablets and phones */
+@media only screen and (max-device-width: 1600px) {
+  .bgimg-1, .bgimg-2, .bgimg-3 {
+    background-attachment: scroll;
+    min-height: 400px;
+  }
+}
+</style>
+<body>
+
+<!-- First Parallax Image with Logo Text -->
+<div class="bgimg-1 w3-display-container" id="home">
+    
+</div>
+
+ 
+<!-- Container (About Section) -->
+<div class="w3-content w3-container " id="about">
+  <h3 class="w3-center w3-xxlarge w3-wide">OptiGrow Companion Smart System</h3>
+  <h4 class="w3-center"><em>Write Ups</em></h4>
+  <a href="https://github.com/Nayera02/CPSC-581---OptiGrow">View Source Code!</a>
+  
+
+  <h5>Overview</h5>
+  <p>Our primary goal for this project was to create a physical prototype to solve 
+    an everyday problem with at least one output and input device. In pursuit of this
+    objective, we designed a smart system that aids in optimizing plant growth conditions. 
+    The system incorporates sensors to measure crucial environmental factors such as temperature
+    , humidity, and light intensity. By integrating these inputs, the system provides feedback to
+    users through a combination of sensory outputs, specifically a buzzing sound, indicating the 
+    ideal location for placing a plant. This smart innovative system alleviates the common daily 
+    challenge people encounter when aiming to ensure optimal and healthy growth of their plants. 
+    This system stands out due to its ability to dynamically monitor key environmental factors 
+    in real-time, providing timely feedback to guide users in identifying the perfect spot for their plants. 
+</p>
+  <h5>System Logic</h5>
+    <p>
+    The smart system aims to assist users in determining the perfect spot for their plants to flourish. 
+      Initially, users are required to research and set the necessary conditions that foster the optimal 
+      growth for their specific plant species. The system then tracks temperature, humidity, and light 
+      intensity until it identifies the ideal environment. Once the ideal temperature, humidity, and light
+      intensity are detected, the buzzer is triggered to alert the user to halt plant movement. 
+    </p>
+    
+    <p>
+    Key Components: 
+    </p>
+    <p>
+    1. DHT sensor: Measures temperature and humidity levels in the environment.
+    </p>
+    <p>
+    2. LDR (Light Dependent Resistor) / Photoresistor: Measures light intensity.
+    </p>
+    <p>3. Buzzer: Acts as an output device to signal the user when optimal plant growth conditions are detected.</p>
+    
+   <p> 4. Arduino microcontroller: Facilitates the integration of sensor data and controls the feedback mechanism.</p> 
+    
+
+  
+  <h5>Initial 10 Sketches</h5>
+  <p>Each team member was asked to sketch out 10 ideas that they believe could be suitable for an 
+    engaging and novel physical prototype. We then discussed each idea thoroughly and brainstormed new 
+    features that could be added to the original idea. At the end, we decided that “OptiGrow Companion” is 
+    the idea that best suits the project’s rubric and has the most prospects for success while being implementable 
+    given the short timeline.
+</p>
+
+  <h5>Refined 10 Sketches</h5>
+  <p>After agreeing that the “OptiGrow Companion” idea had the most prospect for innovation and success, each 
+    team member created 10 refined sketches that matched their vision of the smart system. We then discussed all 
+    the designs, and decided on the feasible features of the system that could be implemented given our short timeline.
+</p>
+
+  <ol>
+    <li>System detects light intensity and determines if it is sufficient for healthy growth.</li>
+    <li>System detects the room temperature and determines if it is ideal.</li>
+    <li>If the surrounding environmental conditions are satisfactory, an LED will flash.</li>
+    <li>If the system detects that the moisture level in th esoil is low, it waters the plant.</li>
+    <li>The system will move the plant until an ideal position is found.</li>
+    <li>If the system detects that either the temperature or humidity is too high, the systems switches on a fan that is directed towards the plant.</li>
+    <li>If the surrounding environmental conditions are unsatisfactory, the system will display the unmet requirements. Otherwise it will display that the environmental conditions are satisfactory.</li>
+    <li>If the surrounding environmental conditions are satisfactory, the system will make a loud noise.</li>
+    <li>If the light intensity is determined to be too low, the system powers several LEDs.</li>
+    <li>System detects the moisture level in soil and determines if it is sufficient or excessive.</li>
+  </ol>
+  
+
+  <h5>What makes our system special?</h5>
+
+  <p>
+    Unlike conventional methods that rely solely on static guidelines, this system dynamically assesses 
+    the immediate surroundings in real-time, ensuring a precise evaluation of the plant's habitat. What sets
+    this system apart is its user-centric design. It empowers individuals by not only offering data-driven 
+    insights but also by guiding them through a sensory feedback mechanism. By emitting a distinctive buzzing
+    sound when optimal conditions are detected, the system creates an interactive and intuitive experience for
+    users. This auditory cue signifies the opportune moment to place the plant, eliminating the guesswork and 
+    allowing for a seamless and informed decision-making process.
+  </p>
+  
+  <p>
+    In essence, the integration of real-time monitoring, personalized guidance, and user interaction elevates 
+    this system beyond a mere monitoring tool. It transforms plant care into an engaging and informed experience, 
+    offering an innovative solution that simplifies the complexities of nurturing plants while promoting their healthy growth and well-being.
+</p>
+
+  <h5>Project contribution:</h5>
+  <p>Our team's success in this project was the result of a coordinated effort, with each member playing a 
+    crucial role. When it came to sketching out our initial ideas, each team member prepared their own ideas, 
+    then we brainstormed, refined, and collaborated to bring our creative visions to life. As a team, we successfully 
+    assembled the smart system using an Arduino kit and various sensors, then developed the code that brings our idea 
+    to life. Nayera’s writing skills allowed the team to present informative write-ups that effectively communicated 
+    the essence of our project. For the concept video and demo, Hala brought the smart system to life with 
+    her enthusiasm and acting skills. 
+    Together, we combined our strengths and talents to deliver an innovative and engaging application in a short period of time.
+</p>
+</div>
+   
+<!-- Second Parallax Image with Portfolio Text -->
+<div class="bgimg-2 w3-display-container">
+  <div class="w3-display-middle">
+    <span class="w3-xxlarge w3-wide">CONCEPT VIDEO</span>
+  </div>
+</div>
+
+<div style="text-align:center;">
+  <iframe width="560" height="315" src="https://www.youtube.com/embed/CAgqKXbYmf8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+</div>
+
+
+<!-- Second Parallax Image with Portfolio Text -->
+<div class="bgimg-2 w3-display-container">
+  <div class="w3-display-middle">
+    <span class="w3-xxlarge w3-wide">DEMO</span>
+  </div>
+</div>
+
+<div style="text-align:center;">
+  <iframe width="560" height="315" src="https://www.youtube.com/embed/WqT8iIYW7wk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+</div>
+
+<!-- Container (Sketch Section) -->
+<div class="w3-content w3-container w3-padding-64" id="portfolio">
+  <h3 class="w3-center w3-xxlarge w3-wide">INITIAL SKETCHES</h3>
+  <h4 class="w3-center"><em>Click on each image to read the description!</em></h4><br>
+
+  <!-- Responsive Grid. Four columns on tablets, laptops and desktops. Will stack on mobile devices/small screens (100% width) -->
+  <div class="w3-row-padding w3-center">
+    <div class="w3-col m3">
+      <img src="initial_optigrow_1.jpeg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Proximity Door Opener: A system that automatically opens doors upon sensing someone's approach.">
+    </div>
+
+    <div class="w3-col m3">
+        <img src="initial_optigrow_2.jpeg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="TiltKey Keeper: A key concealment gadget for storing spare keys, activated by tilting to a specific angle via a built-in tilt sensor to release the key.">
+    </div>
+
+    <div class="w3-col m3">
+        <img src="initial_optigrow_3.jpeg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="SunGrow Advisor: A system that gauges sunlight levels to determine optimal plant growth conditions, indicating the best plant placement by employing an LDR and LCD. ">
+    </div>
+
+    <div class="w3-col m3">
+        <img src="initial_optigrow_4.jpeg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Presence Illuminate: A system that senses user presence to activate a lamp and automatically turns it off when the user is absent, utilizing an ultrasonic motion sensor.">
+    </div>
+    
+  </div>
+
+  <div class="w3-row-padding w3-center w3-section">
+    <div class="w3-col m3">
+        <img src="initial_optigrow_5.jpeg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="WakeEase Pillow: A system that moves the pillow when it's time to wake up.">
+    </div>
+
+    <div class="w3-col m3">
+        <img src="initial_optigrow_6.jpeg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Day-Night Illuminator: A system that automatically switches lights on/off based on distinguishing morning and night. ">
+    </div>
+
+    <div class="w3-col m3">
+        <img src="initial_optigrow_7.jpeg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="FreshCart Automator: A system that identifies expired or finished items in the fridge and automatically adds them to an online shopping list.">
+    </div>
+
+    <div class="w3-col m3">
+        <img src="initial_optigrow_8.jpeg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="VoiceGlow Controller: A system that responds to voice commands to control light, adjusting both on/off functions and brightness levels.">
+    </div>
+
+    
+
+  </div>
+
+  <div class="w3-row-padding w3-center w3-section">
+    <div class="w3-col m3">
+        <img src="initial_optigrow_9.jpeg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="AquaFill Cup Monitor: A system that monitors the water level in a cup and automatically refills it when it drops to a specific point to ensure the user stays hydrated.">
+    </div>
+
+    <div class="w3-col m3">
+        <img src="initial_optigrow_10.jpeg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="SafeGaurd Baby Notifier: A system that alerts parents when their baby approaches hazardous areas like stairs or the kitchen using ultrasonic or proximity sensors.">
+    </div>
+  </div>
+</div>
+
+<!-- Container (Refined Sketch Section) -->
+<div class="w3-content w3-container w3-padding-64" id="portfolio">
+  <h3 class="w3-center w3-xxlarge w3-wide">REFINED SKETCHES</h3>
+  <h4 class="w3-center"><em>Click on each image to read the description!</em></h4><br>
+
+  <!-- Responsive Grid. Four columns on tablets, laptops and desktops. Will stack on mobile devices/small screens (100% width) -->
+  <div class="w3-row-padding w3-center">
+    <div class="w3-col m3">
+        <img src="refined_optigrow_1.jpeg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="System detects light intensity and determines if it is sufficient for healthy growth.">
+    </div>
+
+    <div class="w3-col m3">
+        <img src="refined_optigrow_2.jpeg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="System detects the room temperature and determines if it is ideal.">
+    </div>
+
+    <div class="w3-col m3">
+        <img src="refined_optigrow_3.jpeg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="If the surrounding environmental conditions are satisfactory, an LED will flash.">
+    </div>
+
+    <div class="w3-col m3">
+        <img src="refined_optigrow_4.jpeg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="If the system detects that the moisture level in th esoil is low, it waters the plant.">
+    </div>
+  </div>
+
+  <div class="w3-row-padding w3-center w3-section">
+    <div class="w3-col m3">
+        <img src="refined_optigrow_5.jpeg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="The system will move the plant until an ideal position is found.">
+    </div>
+
+    <div class="w3-col m3">
+        <img src="refined_optigrow_6.jpeg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="If the system detects that either the temperature or humidity is too high, the systems switches on a fan that is directed towards the plant.">
+    </div>
+
+    <div class="w3-col m3">
+        <img src="refined_optigrow_7.jpeg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="If the surrounding environmental conditions are unsatisfactory, the system will display the unmet requirements. Otherwise it will display that the environmental conditions are satisfactory.">
+    </div>
+
+    <div class="w3-col m3">
+        <img src="refined_optigrow_8.jpeg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="If the surrounding environmental conditions are satisfactory, the system will make a loud noise.">
+    </div>
+  </div>
+
+  <div class="w3-row-padding w3-center w3-section">
+    <div class="w3-col m3">
+        <img src="refined_optigrow_9.jpeg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="If the light intensity is determined to be too low, the system powers several LEDs.">
+    </div>
+
+    <div class="w3-col m3">
+        <img src="refined_optigrow_10.jpeg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="System detects the moisture level in soil and determines if it is sufficient or excessive.">
+    </div>
+  </div>
+</div>
+
+
+
+
+<!-- Container (Portfolio Section) -->
+<div class="w3-content w3-container w3-padding-64" id="portfolio">
+  <h3 class="w3-center w3-xxlarge w3-wide">CIRCUIT AND SAMPLE OUTPUT</h3>
+  <h4 class="w3-center"><em></em></h4><br>
+
+ <!-- Responsive Grid. Four columns on tablets, laptops and desktops. Will stack on mobile devices/small screens (100% width) -->
+ <div class="w3-row-padding w3-center">
+  <div class="w3-col m3">
+    <img src="optigrow_circuit_1.jpeg" style="width: 100%; height: 24.99999%;" onclick="onClick(this)" class="w3-hover-opacity" 
+    alt=" </br> </br>  </br>
+    
+    <ul>
+      
+    </ul> ">
+  </div>
+
+    <div class="w3-col m3">
+      <img src="optigrow_circuit_2.jpeg" style="width: 100%; height: 24.99999%;" onclick="onClick(this)" class="w3-hover-opacity" 
+      alt="</br> </br> </br>
+     
+      <ul>
+       
+      </ul> ">
+    </div>
+   <div class="w3-col m3">
+      <img src="optigrow_circuit_3.jpeg" style="width: 100%; height: 24.99999%;" onclick="onClick(this)" class="w3-hover-opacity" 
+      alt=" </br></br> </br>
+      
+      <ul>
+       
+      </ul> ">
+    </div>
+
+      <div class="w3-col m3">
+        <img src="optigrow_sample.JPG" style="width: 100%; height: 24.99999%;" onclick="onClick(this)" class="w3-hover-opacity" 
+        alt="</br>  </br>  </br>
+        
+        <ul>
+         
+        </ul> ">
+      </div>
+    </div>
+
+
+<!-- Modal for full size images on click-->
+<div id="modal01" class="w3-modal w3-black" onclick="this.style.display='none'">
+  <span class="w3-button w3-large w3-black w3-display-topright" title="Close Modal Image"><i class="fa fa-remove"></i></span>
+  <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
+    <img id="img01" class="w3-image">
+    <p id="caption" style="text-align:left" class="w3-opacity w3-large"></p>
+  </div>
+</div>
+ 
+<script>
+  
+// Modal Image Gallery
+function onClick(element) {
+  document.getElementById("img01").src = element.src;
+  document.getElementById("modal01").style.display = "block";
+  var captionText = document.getElementById("caption");
+  captionText.innerHTML = element.alt;
+}
+
+
+
+</script>
+
+</body>
+</html>
